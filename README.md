@@ -19,7 +19,7 @@ Advert e kayıt atıldığında ActiveMq ile kuyruğa yazıyorum email servisind
 
 # 3. Madde
 
-###User Controller
+### User Controller
     @RestController
     @RequestMapping("/users")
     @RequiredArgsConstructor
@@ -42,7 +42,7 @@ Advert e kayıt atıldığında ActiveMq ile kuyruğa yazıyorum email servisind
             return ResponseEntity.ok(userService.getUserById(id));
         }
     }
-###User Service
+### User Service
     @Service
     @RequiredArgsConstructor
     public class UserService {
@@ -61,7 +61,7 @@ Advert e kayıt atıldığında ActiveMq ile kuyruğa yazıyorum email servisind
             return userMapper.toDTO(userRepository.getUserById(id));
         }
     }
-###User Repository
+### User Repository
     public List<User> getAllList() {
         return userList;
     }
@@ -75,7 +75,7 @@ Advert e kayıt atıldığında ActiveMq ile kuyruğa yazıyorum email servisind
         return userList.stream().filter(i->i.getId().equals(id)).findAny().orElse(new User());
     }
 
-###Message Controller
+### Message Controller
     @RestController
     @RequestMapping("/messages")
     @RequiredArgsConstructor
@@ -98,7 +98,7 @@ Advert e kayıt atıldığında ActiveMq ile kuyruğa yazıyorum email servisind
         }
     }
 
-###Message Service
+### Message Service
     @Service
     @RequiredArgsConstructor
     public class MessageService {
@@ -118,7 +118,7 @@ Advert e kayıt atıldığında ActiveMq ile kuyruğa yazıyorum email servisind
         }
     }
 
-###Message Repository
+### Message Repository
     public List<Message> getAllList() {
         return messageList;
     }
