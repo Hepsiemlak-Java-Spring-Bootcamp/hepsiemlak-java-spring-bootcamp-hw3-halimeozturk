@@ -1,5 +1,0 @@
-com\example\emlakburadaemail\service\EmailService.class
-com\example\emlakburadaemail\controller\EmailController.class
-com\example\emlakburadaemail\dto\Email.class
-com\example\emlakburadaemail\EmlakburadaEmailApplication.class
-com\example\emlakburadaemail\service\ActiveMqListenerService.class
